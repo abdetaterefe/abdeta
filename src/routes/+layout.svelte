@@ -6,7 +6,7 @@
 
 <Header />
 
-<main class="p-2 m-2">
+<main class="p-4 md:px-10 md:py-10">
 	<slot />
 </main>
 
