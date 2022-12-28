@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Post } from '$lib/interfaces';
-	import postcss from 'postcss';
 	export let data: Post;
 </script>
 
