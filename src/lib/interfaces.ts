@@ -1,3 +1,7 @@
+export interface Category {
+    allCategories: string[];
+}
+
 export interface Post {
     posts: Array<Posts>;
 }
