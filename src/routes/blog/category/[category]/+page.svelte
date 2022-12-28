@@ -6,7 +6,7 @@
 <div class="md:col-span-3 col-span-4">
 	{#each data.posts as post}
 		<div class="flex flex-col mb-4 justify-between p-4 leading-normal">
-			<a href={post.path}>
+			<a href="/{post.path}">
 				<h1 class="mb-2 text-4xl font-bold tracking-tight hover:text-gray-700">
 					{post.meta.title}
 				</h1>
