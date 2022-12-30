@@ -44,7 +44,7 @@
 </Drawer>
 
 <header class="p-4 flex flex-wrap justify-between">
-	<a class="text-lg justify-center items-center flex" href="/">Abdeta Logo</a>
+	<a class="text-lg justify-center items-center flex" href="/"><img class="rounded-lg" src="/favicon.ico" alt="Abdeta Logo"></a>
 	<button class="inline-flex items-center p-2 md:hidden border-2 border-blue-900">
 		<span class="sr-only">Open main menu</span>
 		<svg
