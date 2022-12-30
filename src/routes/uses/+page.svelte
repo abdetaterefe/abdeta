@@ -1,3 +1,22 @@
+<svelte:head>
+	<title>Abdeta Terefe</title>
+	<meta property="og:title" content="Abdeta Terefe" />
+	<meta
+		data-key="description"
+		property="og:description"
+		name="description"
+		content="I'm fullstack developer"
+	/>
+	<meta
+		property="og:image"
+		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
+	/>
+	<meta
+		name="twitter:image"
+		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
+	/>
+</svelte:head>
+
 <div class="grid md:grid-cols-2 gap-2">
 	<div>
 		<div>

@@ -3,6 +3,25 @@
 	export let data: PageData;
 </script>
 
+<svelte:head>
+	<title>Abdeta Terefe</title>
+	<meta property="og:title" content="Abdeta Terefe" />
+	<meta
+		data-key="description"
+		property="og:description"
+		name="description"
+		content="I'm fullstack developer"
+	/>
+	<meta
+		property="og:image"
+		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
+	/>
+	<meta
+		name="twitter:image"
+		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
+	/>
+</svelte:head>
+
 <h1>
 	<strong
 		class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
@@ -16,8 +35,13 @@
 		<div class="items-center bg-gray-200 shadow sm:flex">
 			<div class="p-2 w-full">
 				<div>
-					<h3 >
-						<a class="text-xl font-bold tracking-tight text-gray-900 hover:text-blue-700" href={data.html_url} target="_blank" rel="noreferrer">{data.name}</a>
+					<h3>
+						<a
+							class="text-xl font-bold tracking-tight text-gray-900 hover:text-blue-700"
+							href={data.html_url}
+							target="_blank"
+							rel="noreferrer">{data.name}</a
+						>
 					</h3>
 					<span class="text-gray-500">{data.fork ? 'Forked' : ''}</span>
 					<p class="mt-3 mb-4 font-light text-gray-500 w-full">
@@ -33,7 +57,9 @@
 						>
 						<p>{data.stargazers_count}</p>
 					</div>
-					<div class="font-light text-gray-900 px-2 bg-gradient-to-r from-blue-500 to-blue-600">{data.language ? data.language : ''}</div>
+					<div class="font-light text-gray-900 px-2 bg-gradient-to-r from-blue-500 to-blue-600">
+						{data.language ? data.language : ''}
+					</div>
 				</div>
 			</div>
 		</div>

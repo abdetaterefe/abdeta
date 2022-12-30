@@ -3,9 +3,21 @@
 	export let data: Slug;
 </script>
 
+<svelte:head>
+	<title>{data.title}</title>
+	<meta property="og:title" content="{data.title}" />
+	<meta
+		data-key="description"
+		property="og:description"
+		name="description"
+		content="{data.description}"
+	/>
+</svelte:head>
+
 <article class="md:col-span-3 col-span-4">
 	<div class="mb-10">
 		<h1 class="text-3xl font-extrabold leading-tight lg:text-4xl">{data.title}</h1>
+		<p>{data.description}</p>
 		<p>Published: {data.date}</p>
 	</div>
 
