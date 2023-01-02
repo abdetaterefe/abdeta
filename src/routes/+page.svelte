@@ -47,7 +47,7 @@
 			>
 				Abdi.
 			</strong>
-			I'm fullstack developer</span
+			I'm web developer</span
 		>
 	</div>
 	<div>
