@@ -5,12 +5,12 @@
 
 <svelte:head>
 	<title>{data.title}</title>
-	<meta property="og:title" content="{data.title}" />
+	<meta property="og:title" content={data.title} />
 	<meta
 		data-key="description"
 		property="og:description"
 		name="description"
-		content="{data.description}"
+		content={data.description}
 	/>
 </svelte:head>
 
@@ -20,8 +20,9 @@
 		<p>{data.description}</p>
 		<p>Published: {data.date}</p>
 	</div>
-
-	<svelte:component this={data.content} />
+	<article class="prose prose-lg">
+		{@html data.content}
+	</article>
 	<div class="mt-10 flex gap-2 items-center">
 		<p>Posted in :</p>
 		{#each data.categories as category}
