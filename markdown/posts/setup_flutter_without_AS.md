@@ -59,8 +59,6 @@ flutter doctor
 
 ### For Windows
 
-I recomend [Coding Pack For Java](https://code.visualstudio.com/docs/java/java-tutorial) , go to site and download `Install the Coding Pack for Java - Windows`, this will install Java and Vscode, no problem if you have installed Vscode before.
-
 I suggest using Microsoft's **Coding Pack For Java** to install the JDK. Go to [this](https://code.visualstudio.com/docs/java/java-tutorial) website and download **Install the Coding Pack for Java - Windows,** which will install both Java and Vscode without any issues if you've already installed Vscode.
 
 ### For Linux
