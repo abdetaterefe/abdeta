@@ -28,7 +28,7 @@
 		{#each data.categories as category}
 			<a
 				href="/blog/category/{category}"
-				class="items-center p-1 text-xs font-medium bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+				class="inline-flex rounded text-myBlue-800 items-center py-2 px-2 text-xs font-bold bg-myBlue-400 hover:bg-myBlue-300"
 				>{category}
 			</a>
 		{/each}
