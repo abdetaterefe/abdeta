@@ -11,7 +11,7 @@
 	<div class="p-2">
 		<button
 			on:click={handleToggle}
-			class="h-10 bg-blue-900 text-white w-40 flex justify-center items-center hover:bg-blue-400"
+			class="h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600"
 		>
 			<span class="font-bold text-xl">Close</span>
 		</button>
@@ -20,21 +20,21 @@
 				<a
 					href="/blog"
 					on:click={handleToggle}
-					class="h-10 bg-blue-900 text-white w-40 flex justify-center items-center hover:bg-blue-400 mb-5"
+					class="h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
 				>
 					<span class="decoration-inherit no-underline font-bold text-xl">Blog</span>
 				</a>
 				<a
 					href="/project"
 					on:click={handleToggle}
-					class="h-10 bg-blue-900 text-white w-40 flex justify-center items-center hover:bg-blue-400 mb-5"
+					class="h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
 				>
 					<span class="decoration-inherit no-underline font-bold text-xl">Projects</span>
 				</a>
 				<a
 					href="/uses"
 					on:click={handleToggle}
-					class="h-10 bg-blue-900 text-white w-40 flex justify-center items-center hover:bg-blue-400 mb-5"
+					class="h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
 				>
 					<span class="decoration-inherit no-underline font-bold text-xl">Uses</span>
 				</a>
@@ -45,7 +45,7 @@
 
 <header class="p-4 flex flex-wrap justify-between">
 	<a class="text-lg justify-center items-center flex" href="/"><img class="rounded-lg" src="/favicon.ico" alt="Abdeta Logo"></a>
-	<button class="inline-flex items-center p-2 md:hidden border-2 border-blue-900">
+	<button class="inline-flex items-center p-2 md:hidden border-2 border-myBlue-800">
 		<span class="sr-only">Open main menu</span>
 		<svg
 			class="w-6 h-6"
@@ -65,19 +65,19 @@
 		<ul class="flex gap-4 list-none">
 			<a
 				href="/blog"
-				class="h-10 bg-blue-900 text-white w-40 flex justify-center items-center hover:bg-blue-400 mb-5"
+				class="h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Blog</span>
 			</a>
 			<a
 				href="/project"
-				class="h-10 bg-blue-900 text-white w-40 flex justify-center items-center hover:bg-blue-400 mb-5"
+				class="h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Projects</span>
 			</a>
 			<a
 				href="/uses"
-				class="h-10 bg-blue-900 text-white w-40 flex justify-center items-center hover:bg-blue-400 mb-5"
+				class="h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Uses</span>
 			</a>
