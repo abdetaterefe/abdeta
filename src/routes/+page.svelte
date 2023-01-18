@@ -96,11 +96,17 @@
 			<TlCard percent="90">Amharic</TlCard>
 			<TlCard percent="80">Oromic</TlCard>
 			<TlCard percent="70">English</TlCard>
-			<TlCard percent="5">Learnig Japannese</TlCard>
+			<TlCard percent="5">Learnig Japanese</TlCard>
 		</div>
 	</div>
 </div>
 <div class="mt-10 grid md:grid-cols-2 gap-4">
+	<div class="">
+		<p class="mb-4 font-light text-xl text-gray-700">
+			I'm Abdeta Terefe(Abdi), I'm software engineer who focuses in website development and has some
+			expreince with mobile development.
+		</p>
+	</div>
 	<div class="">
 		<h1 class="mt-4 md:mt-8">
 			<strong class="text-myBlue-800">Personally</strong>
@@ -115,17 +121,13 @@
 			Honestly, I'm someone who prefers learning at least one HTML tag I was unaware of rather than
 			sitting around doing nothing for a day.
 		</p>
-	</div>
-	<div class="">
+		<p class="mb-4 font-light text-gray-700">
+			I'm an anime fan, I love anime, and my favorite is Attack on Titan.
+		</p>
 		<h1 class="mt-4 md:mt-8">
 			<strong class="text-myBlue-800">Professionally</strong>
 		</h1>
-		<p class="mb-4 font-light text-gray-700">
-			I have never worked professionally; I'm a freshman and have never had a job or done freelance
-			work. As a currently fresh-man student studying software engineering, everything I have done
-			or learnt thus far has been self-taught. I believe I still have a lot to learn before engaging
-			in professional activities.
-		</p>
+		<p class="mb-4 font-light text-gray-700">...</p>
 	</div>
 </div>
 <div class="text-xl">
