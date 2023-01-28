@@ -35,18 +35,18 @@
 </svelte:head>
 
 <h1>
-	<strong class="text-myBlue-800">About Me</strong>
+	<strong class="text-myBlue-800 dark:text-myBlue-300">About Me</strong>
 </h1>
 <div class="grid gap-4 md:grid-cols-2">
 	<div class="p-4 inline-flex">
-		<span class="text-5xl md:text-6xl font-bold"
+		<span class="dark:text-white text-5xl md:text-6xl font-bold"
 			>Hi, I'm <strong class="text-myBlue-700">Abdi. </strong>
 			I'm web developer</span
 		>
 	</div>
 	<div>
 		<h1 class="mb-2">
-			<strong class="text-myBlue-800">TechStacks</strong>
+			<strong class="text-myBlue-800 dark:text-myBlue-300">TechStacks</strong>
 		</h1>
 		<div class="grid md:grid-cols-6 grid-cols-4 justify-evenly gap-2 w-full" role="group">
 			<TlCard percent="30">
@@ -90,7 +90,7 @@
 			</TlCard>
 		</div>
 		<h1 class="mt-4 md:mt-8">
-			<strong class="text-myBlue-800">Languages</strong>
+			<strong class="text-myBlue-800 dark:text-myBlue-300">Languages</strong>
 		</h1>
 		<div class="grid md:grid-cols-4 grid-cols-2 justify-evenly gap-2 w-full" role="group">
 			<TlCard percent="90">Amharic</TlCard>
@@ -102,35 +102,35 @@
 </div>
 <div class="mt-10 grid md:grid-cols-2 gap-4">
 	<div class="">
-		<p class="mb-4 font-light text-xl text-gray-700">
+		<p class="mb-4 font-light text-xl text-gray-700 dark:text-gray-300">
 			I'm Abdeta Terefe(Abdi), I'm software engineer who focuses in website development and has some
 			expreince with mobile development.
 		</p>
 	</div>
 	<div class="">
 		<h1 class="mt-4 md:mt-8">
-			<strong class="text-myBlue-800">Personally</strong>
+			<strong class="text-myBlue-800 dark:text-myBlue-300">Personally</strong>
 		</h1>
-		<p class="mb-4 font-light text-gray-700">
+		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">
 			I'm a rookie developer who is completely fixated on all things technological,
 			programming-related, and hardware-related. I enjoy reading or watching a video about them and
 			sharing them with my friends. From now on, hopefully, I'll share what I learn or whatever is
 			on my mind in this blog.
 		</p>
-		<p class="mb-4 font-light text-gray-700">
+		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">
 			Honestly, I'm someone who prefers learning at least one HTML tag I was unaware of rather than
 			sitting around doing nothing for a day.
 		</p>
-		<p class="mb-4 font-light text-gray-700">
+		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">
 			I'm an anime fan, I love anime, and my favorite is Attack on Titan.
 		</p>
 		<h1 class="mt-4 md:mt-8">
-			<strong class="text-myBlue-800">Professionally</strong>
+			<strong class="text-myBlue-800 dark:text-myBlue-300">Professionally</strong>
 		</h1>
-		<p class="mb-4 font-light text-gray-700">...</p>
+		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">...</p>
 	</div>
 </div>
-<div class="text-xl">
+<div class="text-xl dark:text-white">
 	More on Things That I <a href="/project" class="underline"
 		>💻<strong class="text-myBlue-800 hover:text-myBlue-600"> Made </strong></a
 	>

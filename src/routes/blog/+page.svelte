@@ -1,4 +1,5 @@
 <script lang="ts">
+	import CButton from '$lib/components/CButton.svelte';
 	import type { Post } from '$lib/interfaces';
 	export let data: Post;
 </script>
@@ -24,21 +25,21 @@
 
 <div class="md:col-span-3 col-span-4">
 	{#each data.posts as post}
-		<div class="flex rounded shadow-md flex-col mb-4 justify-between p-4 leading-normal">
+		<div
+			class="flex rounded shadow-md dark:shadow-zinc-600 flex-col mb-4 justify-between p-4 leading-normal"
+		>
 			<a href="/{post.path}">
-				<h1 class="capitalize mb-2 text-4xl font-bold tracking-tight text-myBlue-900 hover:text-myBlue-700">
+				<h1
+					class="mb-2 text-4xl font-bold tracking-tight text-myBlue-900 hover:text-myBlue-700 dark:text-myBlue-100 hover:dark:text-myBlue-300"
+				>
 					{post.meta.title}
 				</h1>
 			</a>
-			<p class="text-myBlue-800">{post.meta.description}</p>
-			<p class="text-myBlue-800 text-sm">{post.meta.date}</p>
-			<div class="flex gap-2 items-center">
+			<p class="dark:text-myBlue-200 text-myBlue-800">{post.meta.description}</p>
+			<p class="dark:text-myBlue-200 text-myBlue-800 text-sm">{post.meta.date}</p>
+			<div class="flex items-center">
 				{#each post.meta.categories as category}
-					<a
-						href="/blog/category/{category}"
-						class="rounded text-myBlue-800 items-center py-2 px-2 text-xs font-bold bg-myBlue-400 hover:bg-myBlue-300"
-						>{category}
-					</a>
+					<CButton {category} />
 				{/each}
 			</div>
 		</div>

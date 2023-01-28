@@ -1,7 +1,6 @@
 import type { PageServerLoad } from './$types';
 import { Octokit } from "@octokit/core";
 
-
 export const load = (async () => {
     const octokit = new Octokit({
         auth: import.meta.env.VITE_GITHUB_API

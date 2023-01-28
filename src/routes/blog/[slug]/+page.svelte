@@ -1,4 +1,5 @@
 <script lang="ts">
+	import CButton from '$lib/components/CButton.svelte';
 	import type { Slug } from '$lib/interfaces';
 	export let data: Slug;
 </script>
@@ -14,23 +15,19 @@
 	/>
 </svelte:head>
 
-<article class="md:col-span-3 col-span-4">
+<article class="md:col-span-3 col-span-4 dark:text-white">
 	<div class="mb-10">
 		<h1 class="text-3xl font-extrabold leading-tight lg:text-4xl">{data.title}</h1>
 		<p>{data.description}</p>
 		<p>Published: {data.date}</p>
 	</div>
-	<article class="prose prose-lg">
+	<article class="prose prose-lg dark:prose-invert">
 		{@html data.content}
 	</article>
-	<div class="mt-10 flex gap-2 items-center">
+	<div class="mt-10 flex items-center">
 		<p>Posted in :</p>
 		{#each data.categories as category}
-			<a
-				href="/blog/category/{category}"
-				class="inline-flex rounded text-myBlue-800 items-center py-2 px-2 text-xs font-bold bg-myBlue-400 hover:bg-myBlue-300"
-				>{category}
-			</a>
+			<CButton {category} />
 		{/each}
 	</div>
 </article>

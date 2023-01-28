@@ -1,66 +1,48 @@
 <script lang="ts">
+	import Forkicon from '$lib/components/icons/forkicon.svelte';
+	import Repo from '$lib/components/icons/repo.svelte';
+	import Starticon from '$lib/components/icons/starticon.svelte';
 	import type { PageData } from '../$types';
 	export let data: PageData;
 </script>
 
-<svelte:head>
-	<title>Abdeta Terefe</title>
-	<meta property="og:title" content="Abdeta Terefe" />
-	<meta
-		data-key="description"
-		property="og:description"
-		name="description"
-		content="I'm fullstack developer"
-	/>
-	<meta
-		property="og:image"
-		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
-	/>
-	<meta
-		name="twitter:image"
-		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
-	/>
-</svelte:head>
-
-<h1>
-	<strong
-		class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
-	>
-		[ Github Projects ]
-	</strong>
-</h1>
-
 <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
 	{#each data.repos.data as data}
-		<div class="items-center bg-gray-200 shadow sm:flex">
-			<div class="p-2 w-full">
-				<div>
-					<h3>
-						<a
-							class="text-xl font-bold tracking-tight text-gray-900 hover:text-blue-700"
-							href={data.html_url}
-							target="_blank"
-							rel="noreferrer">{data.name}</a
+		<div class="flex flex-col rounded shadow-md dark:shadow-zinc-600 mb-4 justify-between p-4">
+			<div>
+				<header class="flex items-center">
+					<Repo />
+					<a
+						class="ml-2 text-base hover:underline focus:underline dark:text-white"
+						href={data.html_url}
+						target="_blank"
+						rel="noreferrer">{data.name}</a
+					>
+				</header>
+				<p class="my-2 text-xs dark:text-gray-200">
+					{data.description ? data.description : ''}
+				</p>
+			</div>
+
+			<div>
+				<ul class="flex items-center">
+					{#if data.language}
+						<li class="flex items-center mr-4">
+							<div class={`w-3 h-3 rounded-full flex-shrink-0 ${data.language}`} />
+							<span class="ml-1 text-xs dark:text-gray-200">{data.language}</span>
+						</li>
+					{/if}
+					<li class="flex items-center mr-4">
+						<Starticon />
+						<span class="ml-1 text-xs dark:text-gray-200">{data.stargazers_count}</span>
+					</li>
+					<li class="flex items-center mr-4">
+						<Forkicon />
+						<span class="ml-1 text-xs dark:text-gray-200"
+							>{data.fork ? `forked ${data.forks_count}` : data.forks_count}</span
 						>
-					</h3>
-					<span class="text-gray-500">{data.fork ? 'Forked' : ''}</span>
-					<p class="mt-3 mb-4 font-light text-gray-500 w-full">
-						{data.description ? data.description : ''}
-					</p>
-				</div>
-				<div class="mt-1 flex items-center justify-between">
-					<div class="flex">
-						<svg width="24" height="24" viewBox="0 0 24 24"
-							><path
-								d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"
-							/></svg
-						>
-						<p>{data.stargazers_count}</p>
-					</div>
-					<div class="font-light text-gray-900 px-2 bg-gradient-to-r from-blue-500 to-blue-600">
-						{data.language ? data.language : ''}
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	{/each}

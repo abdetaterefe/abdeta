@@ -1,4 +1,5 @@
 <script lang="ts">
+	import CButton from '$lib/components/CButton.svelte';
 	import type { Post } from '$lib/interfaces';
 	export let data: Post;
 </script>
@@ -15,13 +16,9 @@
 			</a>
 			<p class="text-myBlue-800">{post.meta.description}</p>
 			<p class="text-myBlue-800 text-sm">{post.meta.date}</p>
-			<div class="flex gap-2 items-center">
+			<div class="flex items-center">
 				{#each post.meta.categories as category}
-					<a
-						href="/blog/category/{category}"
-						class="rounded text-myBlue-800 items-center py-2 px-2 text-xs font-bold bg-myBlue-400 hover:bg-myBlue-300"
-						>{category}
-					</a>
+					<CButton {category} />
 				{/each}
 			</div>
 		</div>
