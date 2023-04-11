@@ -96,7 +96,7 @@
 			<TlCard percent="90">Amharic</TlCard>
 			<TlCard percent="80">Oromic</TlCard>
 			<TlCard percent="70">English</TlCard>
-			<TlCard percent="5">Learnig Japanese</TlCard>
+			<!-- <TlCard percent="5">Learnig Japanese</TlCard> -->
 		</div>
 	</div>
 </div>
