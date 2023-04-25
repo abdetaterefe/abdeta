@@ -1,18 +1,10 @@
 <script>
-	import Cplusplus from '$lib/components/icons/cplusplus.svelte';
 	import Svelte from '$lib/components/icons/svelte.svelte';
-	import Javascript from '$lib/components/icons/javascript.svelte';
 	import Typescript from '$lib/components/icons/typescript.svelte';
 	import Java from '$lib/components/icons/java.svelte';
-	import Python from '$lib/components/icons/python.svelte';
-	import Dart from '$lib/components/icons/dart.svelte';
 	import Nextjs from '$lib/components/icons/nextjs.svelte';
 	import Reactjs from '$lib/components/icons/reactjs.svelte';
-	import Firebase from '$lib/components/icons/firebase.svelte';
-	import Flutter from '$lib/components/icons/flutter.svelte';
-	import Git from '$lib/components/icons/git.svelte';
 	import TlCard from '$lib/components/TLCard.svelte';
-	import Tailwind from '$lib/components/icons/tailwind.svelte';
 </script>
 
 <svelte:head>
@@ -49,28 +41,13 @@
 			<strong class="text-myBlue-800 dark:text-myBlue-300">TechStacks</strong>
 		</h1>
 		<div class="grid md:grid-cols-6 grid-cols-4 justify-evenly gap-2 w-full" role="group">
-			<TlCard percent="30">
-				<Cplusplus /> C++
-			</TlCard>
 			<TlCard percent="60">
-				<Javascript /> Js
-			</TlCard>
-			<TlCard percent="70">
 				<Typescript /> Ts
 			</TlCard>
 			<TlCard percent="20">
 				<Java /> Java
 			</TlCard>
 			<TlCard percent="60">
-				<Python /> Python
-			</TlCard>
-			<TlCard percent="40">
-				<Dart /> Dart
-			</TlCard>
-			<TlCard percent="50">
-				<Flutter /> Flutter
-			</TlCard>
-			<TlCard percent="75">
 				<Svelte /> Svelte
 			</TlCard>
 			<TlCard percent="40">
@@ -78,15 +55,6 @@
 			</TlCard>
 			<TlCard percent="30">
 				<Reactjs /> React
-			</TlCard>
-			<TlCard percent="60">
-				<Firebase /> Firebase
-			</TlCard>
-			<TlCard percent="80">
-				<Git /> Git
-			</TlCard>
-			<TlCard percent="60">
-				<Tailwind /> Tailwind
 			</TlCard>
 		</div>
 		<h1 class="mt-4 md:mt-8">
