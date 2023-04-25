@@ -31,6 +31,8 @@
 	const handleToggle = () => {
 		isOpen = !isOpen;
 	};
+
+	export let path = '';
 </script>
 
 <Drawer {isOpen} on:clickAway={handleToggle}>
@@ -56,21 +58,27 @@
 				<a
 					href="/blog"
 					on:click={handleToggle}
-					class="rounded h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
+					class={`rounded h-10 ${
+						path === '/blog' ? 'bg-myBlue-900' : 'bg-myBlue-800'
+					} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
 				>
 					<span class="decoration-inherit no-underline font-bold text-xl">Blog</span>
 				</a>
 				<a
 					href="/project"
 					on:click={handleToggle}
-					class="rounded h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
+					class={`rounded h-10 ${
+						path === '/project' ? 'bg-myBlue-900' : 'bg-myBlue-800'
+					} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
 				>
 					<span class="decoration-inherit no-underline font-bold text-xl">Projects</span>
 				</a>
 				<a
 					href="/uses"
 					on:click={handleToggle}
-					class="rounded h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
+					class={`rounded h-10 ${
+						path === '/uses' ? 'bg-myBlue-900' : 'bg-myBlue-800'
+					} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
 				>
 					<span class="decoration-inherit no-underline font-bold text-xl">Uses</span>
 				</a>
@@ -103,19 +111,25 @@
 		<ul class="flex gap-4 list-none">
 			<a
 				href="/blog"
-				class="rounded h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
+				class={`rounded h-10 ${
+					path === '/blog' ? 'bg-myBlue-900' : 'bg-myBlue-800'
+				} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Blog</span>
 			</a>
 			<a
 				href="/project"
-				class="rounded h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
+				class={`rounded h-10 ${
+					path === '/project' ? 'bg-myBlue-900' : 'bg-myBlue-800'
+				} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Projects</span>
 			</a>
 			<a
 				href="/uses"
-				class="rounded h-10 bg-myBlue-800 text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5"
+				class={`rounded h-10 ${
+					path === '/uses' ? 'bg-myBlue-900' : 'bg-myBlue-800'
+				} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Uses</span>
 			</a>
