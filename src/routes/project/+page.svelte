@@ -3,11 +3,11 @@
 	import Repo from '$lib/components/icons/repo.svelte';
 	import Starticon from '$lib/components/icons/starticon.svelte';
 	import type { PageData } from '../$types';
-	export let data: PageData;
+	export let data;
 </script>
 
 <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-	{#each data.repos.data as data}
+	<!-- {#each data.repos.data as data}
 		<div class="flex flex-col rounded shadow-md dark:shadow-zinc-600 mb-4 justify-between p-4">
 			<div>
 				<header class="flex items-center">
@@ -45,5 +45,5 @@
 				</ul>
 			</div>
 		</div>
-	{/each}
+	{/each} -->
 </div>

@@ -32,8 +32,9 @@
 <aside>
 	<div class="fixed inset-0 w-full h-full z-50 overflow-hidden {isOpen ? 'visible' : 'invisible'}">
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
 		<div
-			class="w-screen h-full bg-myBlue-500 cursor-pointer duration-500 transition-opacity overflow-hidden  {isOpen
+			class="w-screen h-full bg-myBlue-500 cursor-pointer duration-500 transition-opacity overflow-hidden {isOpen
 				? 'opacity-50'
 				: 'opacity-0'}"
 			on:click={handleClickAway}
