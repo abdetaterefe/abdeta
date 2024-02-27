@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.postcss';
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/header.svelte';
+	import Footer from '$lib/components/footer.svelte';
 </script>
 
 <div class="dark:bg-zinc-900 flex flex-col h-screen overflow-hidden">

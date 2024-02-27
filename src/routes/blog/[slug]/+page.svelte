@@ -1,5 +1,5 @@
 <script lang="ts">
-	import CButton from '$lib/components/CButton.svelte';
+	import CategoryButton from '$lib/components/category-button.svelte';
 	import type { Slug } from '$lib/interfaces';
 	export let data: Slug;
 </script>
@@ -27,7 +27,7 @@
 	<div class="mt-10 flex items-center">
 		<p>Posted in :</p>
 		{#each data.categories as category}
-			<CButton {category} />
+			<CategoryButton {category} />
 		{/each}
 	</div>
 </article>

@@ -4,7 +4,7 @@
 	import Java from '$lib/components/icons/java.svelte';
 	import Nextjs from '$lib/components/icons/nextjs.svelte';
 	import Reactjs from '$lib/components/icons/reactjs.svelte';
-	import TlCard from '$lib/components/TLCard.svelte';
+	import ProgressPercentCard from '$lib/components/progress-percent-card.svelte';
 </script>
 
 <svelte:head>
@@ -16,14 +16,6 @@
 		name="description"
 		content="I'm web developer"
 	/>
-	<meta
-		property="og:image"
-		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
-	/>
-	<meta
-		name="twitter:image"
-		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
-	/>
 </svelte:head>
 
 <h1>
@@ -33,7 +25,7 @@
 	<div class="p-4 inline-flex">
 		<span class="dark:text-white text-5xl md:text-6xl font-bold"
 			>Hi, I'm <strong class="text-myBlue-700">Abdi. </strong>
-			I'm web developer</span
+			I'm a developer</span
 		>
 	</div>
 	<div>
@@ -41,30 +33,29 @@
 			<strong class="text-myBlue-800 dark:text-myBlue-300">TechStacks</strong>
 		</h1>
 		<div class="grid md:grid-cols-6 grid-cols-4 justify-evenly gap-2 w-full" role="group">
-			<TlCard percent="60">
+			<ProgressPercentCard percent="60">
 				<Typescript /> Ts
-			</TlCard>
-			<TlCard percent="20">
+			</ProgressPercentCard>
+			<ProgressPercentCard percent="20">
 				<Java /> Java
-			</TlCard>
-			<TlCard percent="60">
+			</ProgressPercentCard>
+			<ProgressPercentCard percent="60">
 				<Svelte /> Svelte
-			</TlCard>
-			<TlCard percent="40">
+			</ProgressPercentCard>
+			<ProgressPercentCard percent="40">
 				<Nextjs /> NextJs
-			</TlCard>
-			<TlCard percent="30">
+			</ProgressPercentCard>
+			<ProgressPercentCard percent="30">
 				<Reactjs /> React
-			</TlCard>
+			</ProgressPercentCard>
 		</div>
 		<h1 class="mt-4 md:mt-8">
 			<strong class="text-myBlue-800 dark:text-myBlue-300">Languages</strong>
 		</h1>
 		<div class="grid md:grid-cols-4 grid-cols-2 justify-evenly gap-2 w-full" role="group">
-			<TlCard percent="90">Amharic</TlCard>
-			<TlCard percent="80">Oromic</TlCard>
-			<TlCard percent="70">English</TlCard>
-			<!-- <TlCard percent="5">Learnig Japanese</TlCard> -->
+			<ProgressPercentCard percent="90">Amharic</ProgressPercentCard>
+			<ProgressPercentCard percent="80">Oromic</ProgressPercentCard>
+			<ProgressPercentCard percent="70">English</ProgressPercentCard>
 		</div>
 	</div>
 </div>

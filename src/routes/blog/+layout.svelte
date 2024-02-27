@@ -1,5 +1,5 @@
 <script lang="ts">
-	import CButton from '$lib/components/CButton.svelte';
+	import CategoryButton from '$lib/components/category-button.svelte';
 	import type { Category } from '$lib/interfaces';
 	export let data: Category;
 </script>
@@ -20,7 +20,7 @@
 
 			<div class="w-full" role="group">
 				{#each data.allCategories as category}
-					<CButton {category} />
+					<CategoryButton {category} />
 				{/each}
 			</div>
 		</div>

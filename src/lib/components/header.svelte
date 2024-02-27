@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
-	import Drawer from './Drawer.svelte';
+	import Drawer from './drawer.svelte';
 	import Moon from './icons/moon.svelte';
 	import Sun from './icons/sun.svelte';
 
