@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Abdeta Terefe</title>
+	<title>Uses</title>
 	<meta property="og:title" content="Abdeta Terefe" />
 	<meta
 		data-key="description"

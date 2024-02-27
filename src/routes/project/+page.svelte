@@ -1,49 +1,36 @@
 <script lang="ts">
-	import Forkicon from '$lib/components/icons/forkicon.svelte';
-	import Repo from '$lib/components/icons/repo.svelte';
-	import Starticon from '$lib/components/icons/starticon.svelte';
-	import type { PageData } from '../$types';
+	import ProjectCard from '$lib/components/project-card.svelte';
 	export let data;
 </script>
 
-<div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-	<!-- {#each data.repos.data as data}
-		<div class="flex flex-col rounded shadow-md dark:shadow-zinc-600 mb-4 justify-between p-4">
-			<div>
-				<header class="flex items-center">
-					<Repo />
-					<a
-						class="ml-2 text-base hover:underline focus:underline dark:text-white"
-						href={data.html_url}
-						target="_blank"
-						rel="noreferrer">{data.name}</a
-					>
-				</header>
-				<p class="my-2 text-xs dark:text-gray-200">
-					{data.description ? data.description : ''}
-				</p>
-			</div>
+<svelte:head>
+	<title>Projects</title>
+	<meta property="og:title" content="Abdeta Terefe" />
+</svelte:head>
 
-			<div>
-				<ul class="flex items-center">
-					{#if data.language}
-						<li class="flex items-center mr-4">
-							<div class={`w-3 h-3 rounded-full flex-shrink-0 ${data.language}`} />
-							<span class="ml-1 text-xs dark:text-gray-200">{data.language}</span>
-						</li>
-					{/if}
-					<li class="flex items-center mr-4">
-						<Starticon />
-						<span class="ml-1 text-xs dark:text-gray-200">{data.stargazers_count}</span>
-					</li>
-					<li class="flex items-center mr-4">
-						<Forkicon />
-						<span class="ml-1 text-xs dark:text-gray-200"
-							>{data.fork ? `forked ${data.forks_count}` : data.forks_count}</span
-						>
-					</li>
-				</ul>
+<div class="w-full py-12 lg:py-20">
+	<div class="grid lg:gap-12 px-4 md:px-6">
+		<div class="space-y-2">
+			<h1 class="text-3xl font-bold tracking-tighter lg:text-5xl xl:text-6xl dark:text-white">
+				My Projects
+			</h1>
+			<p
+				class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+			>
+				Check out some of my completed and failed projects.
+			</p>
+		</div>
+		<div>
+			<div class="grid gap-8 mx-auto lg:grid-cols-3 xl:gap-12">
+				{#each data.projects as project}
+					<ProjectCard
+						title={project.title}
+						url={project.url}
+						desc={project.desc}
+						languages={project.languages}
+					/>
+				{/each}
 			</div>
 		</div>
-	{/each} -->
+	</div>
 </div>
