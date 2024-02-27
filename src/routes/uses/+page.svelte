@@ -1,3 +1,7 @@
+<script>
+	import UsesCard from '$lib/components/uses-card.svelte';
+</script>
+
 <svelte:head>
 	<title>Uses</title>
 	<meta property="og:title" content="Abdeta Terefe" />
@@ -6,14 +10,6 @@
 		property="og:description"
 		name="description"
 		content="I'm fullstack developer"
-	/>
-	<meta
-		property="og:image"
-		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
-	/>
-	<meta
-		name="twitter:image"
-		content="https://avatars.githubusercontent.com/u/59355292?s=400&u=9e89eb1ae60b57ed7c0ef0de4858640ae75ce22d&v=4"
 	/>
 </svelte:head>
 
@@ -55,71 +51,13 @@
 </div>
 <div class="container px-4 py-6 md:px-6 lg:py-12">
 	<div class="grid max-w-sm gap-4 mx-auto sm:max-w-2xl md:grid-cols-2 lg:max-w-4xl lg:gap-8">
-		<div class="flex items-start gap-4">
-			<img
-				src="favicon.ico"
-				alt="Code Editor"
-				width="120"
-				height="120"
-				class="rounded-lg object-cover md:h-32 md:w-32 h-16 w-16"
-				style="aspect-ratio: 120 / 120; object-fit: cover;"
-			/>
-			<div class="flex flex-col gap-1.5">
-				<h3 class="font-semibold dark:text-white">Vs Code</h3>
-				<p class="text-sm text-gray-500 dark:text-gray-400">
-					My preferred code editor for its extensibility and ecosystem.
-				</p>
-			</div>
-		</div>
-		<div class="flex items-start gap-4">
-			<img
-				src="favicon.ico"
-				alt="Version Control"
-				width="120"
-				height="120"
-				class="rounded-lg object-cover md:h-32 md:w-32 h-16 w-16"
-				style="aspect-ratio: 120 / 120; object-fit: cover;"
-			/>
-			<div class="flex flex-col gap-1.5">
-				<h3 class="font-semibold dark:text-white">Git</h3>
-				<p class="text-sm text-gray-500 dark:text-gray-400">
-					Git is essential for managing my code and collaborating with others.
-				</p>
-			</div>
-		</div>
+		<UsesCard />
+		<UsesCard />
 	</div>
 </div>
 <div class="container px-4 py-6 md:px-6 lg:py-12">
 	<div class="grid max-w-sm gap-4 mx-auto sm:max-w-2xl md:grid-cols-2 lg:max-w-4xl lg:gap-8">
-		<div class="flex items-start gap-4">
-			<img
-				src="favicon.ico"
-				alt="Code Editor"
-				width="120"
-				height="120"
-				class="rounded-lg object-cover md:h-32 md:w-32 h-16 w-16"
-				style="aspect-ratio: 120 / 120; object-fit: cover;"
-			/>
-			<div class="flex flex-col gap-1.5">
-				<h3 class="font-semibold dark:text-white">HP</h3>
-				<p class="text-sm text-gray-500 dark:text-gray-400">
-					The pc i use to code, it runs on popos!
-				</p>
-			</div>
-		</div>
-		<div class="flex items-start gap-4">
-			<img
-				src="favicon.ico"
-				alt="Version Control"
-				width="120"
-				height="120"
-				class="rounded-lg object-cover md:h-32 md:w-32 h-16 w-16"
-				style="aspect-ratio: 120 / 120; object-fit: cover;"
-			/>
-			<div class="flex flex-col gap-1.5">
-				<h3 class="font-semibold dark:text-white">Galaxy Note9</h3>
-				<p class="text-sm text-gray-500 dark:text-gray-400">My phone</p>
-			</div>
-		</div>
+		<UsesCard />
+		<UsesCard />
 	</div>
 </div>
