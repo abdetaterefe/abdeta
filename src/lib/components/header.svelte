@@ -51,14 +51,6 @@
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Projects</span>
 			</a>
-			<a
-				href="/uses"
-				class={`rounded h-10 ${
-					$page.route.id === '/uses' ? 'bg-myBlue-600' : 'bg-myBlue-800'
-				} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
-			>
-				<span class="decoration-inherit no-underline font-bold text-xl">Uses</span>
-			</a>
 
 			<button
 				type="button"

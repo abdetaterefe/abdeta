@@ -1,8 +1,8 @@
+import { getBlog, getBlogs } from '$lib/utils';
 import type { PageLoad } from './$types';
 
-export const load = (async ({ fetch }) => {
-    const response = await fetch(`/api/posts`)
-    const posts = await response.json()
-
-    return { posts }
+export const load = (async ({ params }) => {
+	const blogs = await getBlogs();
+	console.log(blogs);
+	return { blogs };
 }) satisfies PageLoad;

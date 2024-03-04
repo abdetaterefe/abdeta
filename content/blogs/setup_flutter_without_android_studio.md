@@ -1,10 +1,7 @@
 ---
-title: Setup Flutter Without AS
+title: Setup Flutter Without Android Studio
 description: How to setup flutter without Android Studio
 date: '2023-01-02'
-categories:
-  - 'Flutter'
-  - 'HowTo'
 ---
 
 I'm going to show you how I set up Flutter here without using Android Studio.
@@ -23,7 +20,7 @@ But what if you don't want to install Android Studio? then let's get going.
 
 Visit the [Flutter](https://flutter.dev) website, click "Get Started," choose your operating system, and then Install the flutter Sdk by downloading it and extracting it, for instance, in Windows to `C:\src\flutter` or in Linux to `/home/abdi/flutter`. What I prefer doing is using git to download Flutter.
 
-```
+```bash
 git clone https://github.com/flutter/flutter.git -b stable
 ```
 
@@ -33,7 +30,7 @@ git clone https://github.com/flutter/flutter.git -b stable
 
 If you extracted flutter in `/home/abdi/flutter` make the following addition to your `.bashrc` file.
 
-```
+```bash
 export PATH="$PATH:`pwd`/flutter/bin"
 ```
 
@@ -51,7 +48,7 @@ flutter doctor
 
 Click on the Start button on your computer, type `env` and then click **Edit environment variables for your account.** , then select **Environment Variables**. Now add the flutter sdk path variable by clicking the path under User Variables.
 
-```
+```bash
 flutter doctor
 ```
 
@@ -83,11 +80,11 @@ now go to `latest/bin` and, type this in your terminal
 
 ### For windows
 
-```
+```bash
 sdkmanager.bat "platform-tools" "platforms;android-31" "build-tools;30.0.3" "extras;google;m2repository" "extras;android;m2repository"
 ```
 
-```
+```bash
 flutter doctor --android-licenses
 ```
 

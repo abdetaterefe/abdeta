@@ -19,7 +19,14 @@ const config = {
 	],
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			$lib: 'src/lib',
+			'$lib/*': 'src/lib/*',
+			'@/*': 'src/*',
+			$icons: 'src/components/icons',
+			'$icons/*': 'src/components/icons/*'
+		}
 	}
 };
 
