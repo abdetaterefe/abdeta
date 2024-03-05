@@ -4,49 +4,51 @@ description: How to setup flutter without Android Studio
 date: '2023-01-02'
 ---
 
-I'm going to show you how I set up Flutter here without using Android Studio.
+I'm going to show you how to set up Flutter without using Android Studio. While using Android Studio is the simplest method to install Flutter on your PC, you may prefer to use VsCode instead. After setting up Flutter, you can remove Android Studio and continue working with VsCode. Let's get started.
 
-> Using Android Studio to install Flutter on your PC is the simplest method.
+## Install Flutter SDK
 
-But what if you prefer to use VsCode instead of installing Android Studio?
+### Downloading the Flutter SDK
 
-> After setting up flutter, you can remove Android Studio and continue working with VsCode.
-
-But what if you don't want to install Android Studio? then let's get going.
-
-## Install Flutter Sdk
-
-### Downloading The Flutter Sdk
-
-Visit the [Flutter](https://flutter.dev) website, click "Get Started," choose your operating system, and then Install the flutter Sdk by downloading it and extracting it, for instance, in Windows to `C:\src\flutter` or in Linux to `/home/abdi/flutter`. What I prefer doing is using git to download Flutter.
+1. Visit the [Flutter](https://flutter.dev) website.
+2. Click "Get Started" and choose your operating system.
+3. Download the Flutter SDK and extract it to a preferred location. For example, in Windows, extract it to `C:\src\flutter`, and in Linux, extract it to `/home/abdi/flutter`.
+4. Alternatively, you can use git to download Flutter by running the following command:
 
 ```bash
 git clone https://github.com/flutter/flutter.git -b stable
 ```
 
-### Add the `flutter` tool to your path
+### Add Flutter SDK to your path For Linux
 
-#### For linux
-
-If you extracted flutter in `/home/abdi/flutter` make the following addition to your `.bashrc` file.
+If you extracted Flutter to /home/abdi/flutter, add the following line to your .bashrc file:
 
 ```bash
 export PATH="$PATH:`pwd`/flutter/bin"
 ```
 
+Run the following command to apply the changes:
+
 ```bash
 source ~/.bashrc
 ```
 
-and to verify run
+Verify the installation by running:
 
 ```bash
 flutter doctor
 ```
 
-#### For Windows
+### Add Flutter SDK to your path For Windows
 
-Click on the Start button on your computer, type `env` and then click **Edit environment variables for your account.** , then select **Environment Variables**. Now add the flutter sdk path variable by clicking the path under User Variables.
+1. Click on the Start button on your computer and type "env".
+2. Click "Edit environment variables for your account".
+3. Select "Environment Variables".
+4. Under User Variables, click "New" and enter the following:
+  Variable name: PATH
+  Variable value: C:\src\flutter\bin (replace with the actual path to your Flutter bin folder)
+5. Click "OK" to save the changes.
+6. Verify the installation by running:
 
 ```bash
 flutter doctor
@@ -54,11 +56,11 @@ flutter doctor
 
 ## Install JDK
 
-### For Windows
+### Install JDK For Windows
 
 I suggest using Microsoft's **Coding Pack For Java** to install the JDK. Go to [this](https://code.visualstudio.com/docs/java/java-tutorial) website and download **Install the Coding Pack for Java - Windows,** which will install both Java and Vscode without any issues if you've already installed Vscode.
 
-### For Linux
+### Install JDK For Linux
 
 Install using your preferred package manager; I'm using Debian in my case.
 
@@ -78,7 +80,7 @@ And make new directory named `latest` in the `cmdline-tools` directory and move 
 
 now go to `latest/bin` and, type this in your terminal
 
-### For windows
+### Installing Android Sdk For windows
 
 ```bash
 sdkmanager.bat "platform-tools" "platforms;android-31" "build-tools;30.0.3" "extras;google;m2repository" "extras;android;m2repository"
@@ -96,7 +98,7 @@ Click **New** under the user Variable and enter `ANDROID_HOME` as the variable n
 
 and from there again go to path under user variable and add `C:\Android\sdk\platform-tools` and `C:\Android\sdk\tools`
 
-### For Linux
+### Installing Android Sdk For Linux
 
 ```bash
 ./sdkmanager "platform-tools" "platforms;android-31" "build-tools;30.0.3" "extras;google;m2repository" "extras;android;m2repository"
