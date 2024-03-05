@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { createSeparator, melt } from '@melt-ui/svelte';
 	type Component = $$Generic<typeof SvelteComponent>;
 
@@ -40,6 +39,6 @@
 
 <div use:melt={$horizontal} class="my-3.5 h-[1px] w-full" />
 
-<div class="markdown prose relative pt-4 dark:prose-invert" id="sveco-content">
+<div class="markdown prose relative max-w-3xl pt-4 dark:prose-invert" id="sveco-content">
 	<svelte:component this={component} {data} />
 </div>

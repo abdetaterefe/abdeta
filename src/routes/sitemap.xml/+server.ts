@@ -1,11 +1,10 @@
-import { fetchMarkdownPosts } from '$lib/utils'
-import type { Posts } from '$lib/interfaces'
+import { getBlogs } from '$lib/utils';
 
 export async function GET() {
-  const website = "https://abdeta.vercel.app"
-  const allPosts = await fetchMarkdownPosts()
-  return new Response(
-    `
+	const website = 'https://abdeta.vercel.app';
+	const allPosts = await getBlogs();
+	return new Response(
+		`
     <?xml version="1.0" encoding="UTF-8" ?>
     <urlset
       xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
@@ -20,21 +19,23 @@ export async function GET() {
       <changefreq>daily</changefreq>
       <priority>0.7</priority>
     </url>
-    ${allPosts.map((post: Posts) =>
-      `
+    ${allPosts
+			.map(
+				(post) =>
+					`
       <url>
         <loc>${website}/${post.path}</loc>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
       </url>
       `
-    )
-        .join('')}
+			)
+			.join('')}
     </urlset>`.trim(),
-    {
-      headers: {
-        'Content-Type': 'application/xml'
-      }
-    }
-  );
+		{
+			headers: {
+				'Content-Type': 'application/xml'
+			}
+		}
+	);
 }
