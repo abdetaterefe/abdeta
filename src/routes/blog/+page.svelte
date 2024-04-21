@@ -33,7 +33,7 @@
 							</div>
 
 							<p class="pb-4 text-lg font-bold">{blog.metadata.title}</p>
-							<div class="flex flex-wrap">
+							<!-- <div class="flex flex-wrap">
 								{#each blog.metadata.tags as tag}
 									<a href={`/tags/${tag}`}>
 										<span
@@ -43,7 +43,7 @@
 										</span>
 									</a>
 								{/each}
-							</div>
+							</div> -->
 							<p class="line-clamp-6 pt-4">{blog.metadata.excerpt}</p>
 						</div>
 						<p class="pt-4 underline">read more →</p>
