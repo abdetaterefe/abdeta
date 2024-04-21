@@ -1,13 +1,33 @@
 import { error, redirect } from '@sveltejs/kit';
 
+export const formatDate = (pubDate: string) => {
+	var options: Intl.DateTimeFormatOptions = {
+		weekday: 'short',
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric'
+	};
+
+	return new Date(pubDate).toLocaleDateString('en-US', options);
+};
+
 export function slugFromPath(path: string) {
 	return path.replace('/content/blogs/', '').replace('.md', '');
 }
 
 export async function getBlogs() {
 	const modules = import.meta.glob(`/content/blogs/**/*.md`);
-	const blogs: { path: string; metadata: { title: string; description: string; date: string } }[] =
-		[];
+	const blogs: {
+		path: string;
+		metadata: {
+			title: string;
+			description: string;
+			author: string;
+			excerpt: string;
+			date: string;
+			tags: string[];
+		};
+	}[] = [];
 
 	let match: { path?: string; resolver?: any } = {};
 

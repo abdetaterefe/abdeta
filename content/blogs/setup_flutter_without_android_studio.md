@@ -1,7 +1,10 @@
 ---
 title: Setup Flutter Without Android Studio
 description: How to setup flutter without Android Studio
+author: "abdeta"
+excerpt: I'm going to show you how to set up Flutter without using Android Studio. While using Android Studio is the simplest method to install Flutter on your PC, you may prefer to use VsCode instead. After setting up Flutter, you can remove Android Studio and continue working with VsCode. Let's get started.
 date: '2023-01-02'
+tags: ["flutter", "tutorial", "android studio"]
 ---
 
 I'm going to show you how to set up Flutter without using Android Studio. While using Android Studio is the simplest method to install Flutter on your PC, you may prefer to use VsCode instead. After setting up Flutter, you can remove Android Studio and continue working with VsCode. Let's get started.

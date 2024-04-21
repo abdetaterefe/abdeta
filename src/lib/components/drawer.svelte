@@ -11,7 +11,7 @@
 </script>
 
 <Drawer.Root direction="right">
-	<Drawer.Trigger class="rounded inline-flex items-center p-2 md:hidden border-2 border-myBlue-800">
+	<Drawer.Trigger class="rounded inline-flex items-center p-2 md:hidden border-2 border-slate-800">
 		<span class="sr-only">Open main menu</span>
 		<svg class="w-6 h-6" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
 			><path
@@ -40,7 +40,7 @@
 				<div>
 					<div class="flex justify-evenly">
 						<Drawer.Close
-							class="w-10 h-10 rounded flex justify-center items-center bg-myBlue-800 hover:bg-myBlue-600 text-white"
+							class="w-10 h-10 rounded flex justify-center items-center bg-slate-800 hover:bg-slate-600 text-white"
 						>
 							<Close />
 						</Drawer.Close>
@@ -49,7 +49,7 @@
 							role="switch"
 							aria-label="Toggle Dark Mode"
 							aria-checked={isDarkMode}
-							class="w-10 h-10 rounded flex justify-center items-center bg-myBlue-800 hover:bg-myBlue-600"
+							class="w-10 h-10 rounded flex justify-center items-center bg-slate-800 hover:bg-slate-600"
 							on:click={toggle}><Moon /> <Sun /></button
 						>
 					</div>
@@ -60,8 +60,8 @@
 									<a
 										href="/blog"
 										class={`rounded h-10 ${
-											$page.route.id === '/blog' ? 'bg-myBlue-600' : 'bg-myBlue-800'
-										} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
+											$page.route.id === '/blog' ? 'bg-slate-600' : 'bg-slate-800'
+										} text-white w-40 flex justify-center items-center hover:bg-slate-600 mb-5`}
 									>
 										<span class="decoration-inherit no-underline font-bold text-xl">Blog</span>
 									</a>
@@ -70,8 +70,8 @@
 									<a
 										href="/project"
 										class={`rounded h-10 ${
-											$page.route.id === '/project' ? 'bg-myBlue-600' : 'bg-myBlue-800'
-										} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
+											$page.route.id === '/project' ? 'bg-slate-600' : 'bg-slate-800'
+										} text-white w-40 flex justify-center items-center hover:bg-slate-600 mb-5`}
 									>
 										<span class="decoration-inherit no-underline font-bold text-xl">Projects</span>
 									</a>

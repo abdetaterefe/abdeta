@@ -19,18 +19,18 @@
 </svelte:head>
 
 <h1>
-	<strong class="text-myBlue-800 dark:text-myBlue-300">About Me</strong>
+	<strong class="text-slate-800 dark:text-slate-300">About Me</strong>
 </h1>
 <div class="grid gap-4 md:grid-cols-2">
 	<div class="p-4 inline-flex">
 		<span class="dark:text-white text-5xl md:text-6xl font-bold"
-			>Hi, I'm <strong class="text-myBlue-700">Abdi. </strong>
+			>Hi, I'm <strong class="text-slate-700">Abdi. </strong>
 			I'm a developer</span
 		>
 	</div>
 	<div>
 		<h1 class="mb-2">
-			<strong class="text-myBlue-800 dark:text-myBlue-300">TechStacks</strong>
+			<strong class="text-slate-800 dark:text-slate-300">TechStacks</strong>
 		</h1>
 		<div class="grid md:grid-cols-6 grid-cols-4 justify-evenly gap-2 w-full" role="group">
 			<ProgressPercentCard percent="60">
@@ -50,7 +50,7 @@
 			</ProgressPercentCard>
 		</div>
 		<h1 class="mt-4 md:mt-8">
-			<strong class="text-myBlue-800 dark:text-myBlue-300">Languages</strong>
+			<strong class="text-slate-800 dark:text-slate-300">Languages</strong>
 		</h1>
 		<div class="grid md:grid-cols-4 grid-cols-2 justify-evenly gap-2 w-full" role="group">
 			<ProgressPercentCard percent="90">Amharic</ProgressPercentCard>
@@ -68,7 +68,7 @@
 	</div>
 	<div class="">
 		<h1 class="mt-4 md:mt-8">
-			<strong class="text-myBlue-800 dark:text-myBlue-300">Personally</strong>
+			<strong class="text-slate-800 dark:text-slate-300">Personally</strong>
 		</h1>
 		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">
 			I'm a rookie developer who is completely fixated on all things technological,
@@ -84,17 +84,8 @@
 			I'm an anime fan, I love anime, and my favorite is Attack on Titan.
 		</p>
 		<h1 class="mt-4 md:mt-8">
-			<strong class="text-myBlue-800 dark:text-myBlue-300">Professionally</strong>
+			<strong class="text-slate-800 dark:text-slate-300">Professionally</strong>
 		</h1>
 		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">...</p>
 	</div>
-</div>
-<div class="text-xl dark:text-white">
-	More on Things That I <a href="/project" class="underline"
-		>💻<strong class="text-myBlue-800 hover:text-myBlue-600"> Made </strong></a
-	>
-	,
-	<a href="/blog" class="underline"
-		>📖<strong class="text-myBlue-800 hover:text-myBlue-600"> Wrote </strong></a
-	>
 </div>

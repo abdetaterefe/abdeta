@@ -7,7 +7,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<footer class="bg-myBlue-900 {$page.route.id == "/blog/[...slug]" && 'hidden'}">
+<footer class="bg-slate-900 {$page.route.id == "/blog/[...slug]" && 'hidden'}">
 	<div class="py-6 px-4 md:flex md:items-center md:justify-between">
 		<p class="flex items-center justify-center py-4 text-white">
 			Made with&MediumSpace;<a class="underline" href="https://kit.svelte.dev">SvelteKit</a>

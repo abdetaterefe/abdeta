@@ -1,34 +1,30 @@
 <script lang="ts">
-	import Repo from './icons/repo.svelte';
-
 	export let title: string;
 	export let desc: string;
 	export let url: string;
 	export let languages: string[];
 </script>
 
-<div class="flex flex-col rounded shadow-md dark:shadow-zinc-600 mb-4 justify-between p-4">
-	<div>
-		<header class="flex items-center">
-			<Repo />
-			<a
-				class="ml-2 text-base hover:underline focus:underline dark:text-white"
-				href={url}
-				target="_blank"
-				rel="noreferrer">{title}</a
-			>
-		</header>
-		<p class="my-2 text-xs dark:text-gray-200">{desc}</p>
-	</div>
-
-	<div>
-		<ul class="flex items-center">
-			{#each languages as lang}
-				<li class="flex items-center mr-4">
-					<div class={`w-3 h-3 rounded-full flex-shrink-0 ${lang}`} />
-					<span class="ml-1 text-xs dark:text-gray-200">{lang}</span>
-				</li>
-			{/each}
-		</ul>
+<div
+	class="h-full rounded-2xl bg-slate-200/50 from-slate-900 via-slate-700 to-white p-[1px] text-sm shadow-[inset_0_0_0_1px_rgba(255,255,255,0.4)] hover:bg-gradient-to-r dark:bg-gray-900"
+>
+	<div
+		class="flex h-full w-full flex-col rounded-[1rem] bg-slate-300 p-4 text-gray-900 opacity-90 dark:bg-slate-800 dark:text-white"
+	>
+		<div class="flex-auto">
+			<a href={url} target="_blank"><p class="pb-4 text-lg font-bold">{title}</p></a>
+			<div class="flex flex-wrap">
+				{#each languages as lang}
+					<a href={`/tags/${lang}`}>
+						<span
+							class={`mb-2 mr-2 rounded-xl px-3 py-1 text-xs font-bold uppercase text-white hover:bg-slate-500 ${lang}`}
+						>
+							{lang}
+						</span>
+					</a>
+				{/each}
+			</div>
+			<p class="line-clamp-6 pt-4">{desc}</p>
+		</div>
 	</div>
 </div>

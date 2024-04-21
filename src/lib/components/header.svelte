@@ -38,16 +38,16 @@
 			<a
 				href="/blog"
 				class={`rounded h-10 ${
-					$page.route.id === '/blog' ? 'bg-myBlue-600' : 'bg-myBlue-800'
-				} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
+					$page.route.id === '/blog' ? 'bg-slate-600' : 'bg-slate-800'
+				} text-white w-40 flex justify-center items-center hover:bg-slate-600 mb-5`}
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Blog</span>
 			</a>
 			<a
 				href="/project"
 				class={`rounded h-10 ${
-					$page.route.id === '/project' ? 'bg-myBlue-600' : 'bg-myBlue-800'
-				} text-white w-40 flex justify-center items-center hover:bg-myBlue-600 mb-5`}
+					$page.route.id === '/project' ? 'bg-slate-600' : 'bg-slate-800'
+				} text-white w-40 flex justify-center items-center hover:bg-slate-600 mb-5`}
 			>
 				<span class="decoration-inherit no-underline font-bold text-xl">Projects</span>
 			</a>
@@ -57,7 +57,7 @@
 				role="switch"
 				aria-label="Toggle Dark Mode"
 				aria-checked={isDarkMode}
-				class="w-10 h-10 rounded flex justify-center items-center bg-myBlue-800 hover:bg-myBlue-600"
+				class="w-10 h-10 rounded flex justify-center items-center bg-slate-800 hover:bg-slate-600"
 				on:click={toggle}><Moon /> <Sun /></button
 			>
 		</ul>
