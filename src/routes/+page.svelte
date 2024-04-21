@@ -97,8 +97,4 @@
 	<a href="/blog" class="underline"
 		>📖<strong class="text-myBlue-800 hover:text-myBlue-600"> Wrote </strong></a
 	>
-	or
-	<a href="/uses" class="underline"
-		>👨‍💻<strong class="text-myBlue-800 hover:text-myBlue-600"> Use </strong></a
-	>
 </div>
