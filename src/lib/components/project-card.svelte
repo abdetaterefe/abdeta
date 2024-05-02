@@ -15,13 +15,11 @@
 			<a href={url} target="_blank"><p class="pb-4 text-lg font-bold">{title}</p></a>
 			<div class="flex flex-wrap">
 				{#each languages as lang}
-					<a href={`/tags/${lang}`}>
-						<span
-							class={`mb-2 mr-2 rounded-xl px-3 py-1 text-xs font-bold uppercase text-white hover:bg-slate-500 ${lang}`}
-						>
-							{lang}
-						</span>
-					</a>
+					<span
+						class={`mb-2 mr-2 rounded-xl px-3 py-1 text-xs font-bold uppercase text-white hover:bg-slate-500 ${lang}`}
+					>
+						{lang}
+					</span>
 				{/each}
 			</div>
 			<p class="line-clamp-6 pt-4">{desc}</p>
