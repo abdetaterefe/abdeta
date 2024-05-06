@@ -7,7 +7,7 @@
 	<title>Projects</title>
 	<meta property="og:title" content="Abdeta Terefe" />
 </svelte:head>
-<div class="mx-auto w-full max-w-screen-lg px-4 py-6">
+<div class="mx-auto w-full max-w-screen-xl px-4 py-6">
 	<div class="space-y-2 mb-4">
 		<h1 class="text-3xl font-bold tracking-tighter lg:text-5xl xl:text-6xl dark:text-white">
 			My Projects
@@ -24,6 +24,7 @@
 			<ProjectCard
 				title={project.title}
 				url={project.url}
+				img={project.img}
 				desc={project.desc}
 				languages={project.languages}
 			/>
