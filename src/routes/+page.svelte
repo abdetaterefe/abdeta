@@ -81,7 +81,7 @@
 			sitting around doing nothing for a day.
 		</p>
 		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">
-			I'm an anime fan, I love anime, and my favorite is Attack on Titan.
+			I'm an anime fan, I love anime, and my favorite is One Piece and Bleach.
 		</p>
 		<h1 class="mt-4 md:mt-8">
 			<strong class="text-slate-800 dark:text-slate-300">Professionally</strong>
