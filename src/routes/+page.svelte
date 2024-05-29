@@ -86,6 +86,6 @@
 		<h1 class="mt-4 md:mt-8">
 			<strong class="text-slate-800 dark:text-slate-300">Professionally</strong>
 		</h1>
-		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">...</p>
+		<p class="mb-4 font-light text-gray-700 dark:text-gray-300">....</p>
 	</div>
 </div>
