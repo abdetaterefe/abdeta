@@ -1,9 +1,13 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils/index.js';
 
-	export let data;
+	interface Props {
+		data: any;
+	}
 
-	$: doc = data.blogs;
+	let { data }: Props = $props();
+
+	let doc = $derived(data.blogs);
 </script>
 
 <svelte:head>

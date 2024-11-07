@@ -1,9 +1,19 @@
 <script lang="ts">
-	export let title: string;
-	export let desc: string;
-	export let url: string;
-	export let img: string;
-	export let languages: string[];
+	interface Props {
+		title: string;
+		desc: string;
+		url: string;
+		img: string;
+		languages: string[];
+	}
+
+	let {
+		title,
+		desc,
+		url,
+		img,
+		languages
+	}: Props = $props();
 </script>
 
 <div class="bg-slate-200 dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">

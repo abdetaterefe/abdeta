@@ -1,6 +1,10 @@
 <script lang="ts">
 	import ProjectCard from '$lib/components/project-card.svelte';
-	export let data;
+	interface Props {
+		data: any;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <svelte:head>

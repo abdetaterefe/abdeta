@@ -25,7 +25,7 @@
 	<div class="p-4 inline-flex">
 		<span class="dark:text-white text-5xl md:text-6xl font-bold"
 			>Hi, I'm <strong class="text-slate-700">Abdi. </strong>
-			I'm a developer</span
+			I'm a website developer</span
 		>
 	</div>
 	<div>

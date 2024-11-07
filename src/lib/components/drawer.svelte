@@ -6,8 +6,12 @@
 	import Sun from './icons/sun.svelte';
 	import Close from './icons/close.svelte';
 
-	export let isDarkMode: boolean;
-	export let toggle: () => void;
+	interface Props {
+		isDarkMode: boolean;
+		toggle: () => void;
+	}
+
+	let { isDarkMode, toggle }: Props = $props();
 </script>
 
 <Drawer.Root direction="right">
@@ -50,7 +54,7 @@
 							aria-label="Toggle Dark Mode"
 							aria-checked={isDarkMode}
 							class="w-10 h-10 rounded flex justify-center items-center bg-slate-800 hover:bg-slate-600"
-							on:click={toggle}><Moon /> <Sun /></button
+							onclick={toggle}><Moon /> <Sun /></button
 						>
 					</div>
 					<div class="grid h-full w-full place-content-center">

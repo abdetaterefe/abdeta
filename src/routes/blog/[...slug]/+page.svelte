@@ -9,9 +9,15 @@
 		decorative: true
 	});
 
-	export let data;
-	$: component = data.component as unknown as Component;
-	$: doc = data.metadata;
+	interface Props {
+		data: any;
+	}
+
+	let { data }: Props = $props();
+	let component = $derived(data.component as unknown as Component);
+	let doc = $derived(data.metadata);
+
+	const SvelteComponent = $derived(component);
 </script>
 
 <svelte:head>
@@ -37,8 +43,8 @@
 	</p>
 </section>
 
-<div use:melt={$horizontal} class="my-3.5 h-[1px] w-full" />
+<div use:melt={$horizontal} class="my-3.5 h-[1px] w-full"></div>
 
 <div class="markdown prose relative max-w-3xl pt-4 dark:prose-invert" id="sveco-content">
-	<svelte:component this={component} {data} />
+	<SvelteComponent {data} />
 </div>

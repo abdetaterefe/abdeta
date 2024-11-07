@@ -5,7 +5,7 @@
 	import Moon from './icons/moon.svelte';
 	import Sun from './icons/sun.svelte';
 
-	let isDarkMode = browser ? Boolean(document.documentElement.classList.contains('dark')) : true;
+	let isDarkMode = $state(browser ? Boolean(document.documentElement.classList.contains('dark')) : true);
 
 	function disableTransitionsTemporarily() {
 		document.documentElement.classList.add('[&_*]:!transition-none');
@@ -58,7 +58,7 @@
 				aria-label="Toggle Dark Mode"
 				aria-checked={isDarkMode}
 				class="w-10 h-10 rounded flex justify-center items-center bg-slate-800 hover:bg-slate-600"
-				on:click={toggle}><Moon /> <Sun /></button
+				onclick={toggle}><Moon /> <Sun /></button
 			>
 		</ul>
 	</nav>
