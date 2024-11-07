@@ -2,12 +2,15 @@
 	import '../app.postcss';
 	import Header from '$lib/components/header.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import Analytics from '$lib/components/analytics.svelte';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
 
 	let { children }: Props = $props();
 </script>
+
+<Analytics website_id="03bb7428-2452-49a3-b909-711dfb9ff459" />
 
 <div class="dark:bg-zinc-900 flex flex-col h-screen overflow-hidden">
 	<Header />
