@@ -62,7 +62,7 @@
 <div class="mt-10 grid md:grid-cols-2 gap-4">
 	<div class="">
 		<p class="mb-4 font-light text-xl text-gray-700 dark:text-gray-300">
-			I'm Abdeta Terefe(Abdi), I'm software engineer who focuses in website development and has some
+			I'm Abdeta Terefe(Abdi), I'm software engineer who is focusing on website development and has some
 			expreince with mobile development.
 		</p>
 	</div>
