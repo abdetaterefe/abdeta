@@ -1,31 +1,16 @@
-import { preprocessMeltUI, sequence } from '@melt-ui/pp';
 import { mdsvex } from 'mdsvex';
-import mdsvexConfig from './mdsvex.config.js';
-import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-/** @type {import('@sveltejs/kit').Config}*/
+import adapter from "@sveltejs/adapter-cloudflare";
+
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', '.svelte.md', '.md', '.svx'],
-	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
-	// for more information about preprocessors
-	preprocess: sequence([
-		vitePreprocess(),
-		preprocess({
-			postcss: true
-		}),
-		mdsvex(mdsvexConfig),
-		preprocessMeltUI()
-	]),
 	kit: {
-		adapter: adapter(),
-		alias: {
-			$lib: 'src/lib',
-			'$lib/*': 'src/lib/*',
-			'@/*': 'src/*',
-			$icons: 'src/components/icons',
-			'$icons/*': 'src/components/icons/*'
-		}
-	}
+		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
+		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
+		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
+		adapter: adapter()
+	},
+	preprocess: [mdsvex()],
+	extensions: ['.svelte', '.svx']
 };
+
 export default config;
