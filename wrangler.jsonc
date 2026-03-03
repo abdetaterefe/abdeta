@@ -15,5 +15,8 @@
   "observability": {
     "enabled": true,
   },
-  "route": { "pattern": "abdeta.dev", "custom_domain": true },
+  "routes": [
+    { "pattern": "abdeta.dev", "custom_domain": true },
+    { "pattern": "www.abdeta.dev", "custom_domain": true },
+  ],
 }
